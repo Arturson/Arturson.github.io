@@ -1,0 +1,262 @@
+header {
+  background-image: url("../img/bg-lg.jpg");
+  background-position: 0 20%;
+  background-color: #e6eff8;
+  background-size: 100%;
+
+  .navbar {
+    padding-top: 45px;
+
+    li {
+      text-transform: uppercase;
+
+      .notify {
+        position: relative;
+        bottom: 13px;
+        width: 21px;
+        height: 21px;
+        background-color: @attention;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 4px 4px 4px 3px;
+        border-radius: 50px;
+      }
+
+      .btn {
+        width: 170px;
+        height: 34px;
+        line-height: 18px;
+        font-size: 12px;
+      }
+    }
+
+    .dropdown {
+      i {
+        color: @attention;
+        font-size: 13px;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .intro {
+    margin-top: 170px;
+
+    h1 {
+      font-size: 38px;
+      font-weight: bold;
+    }
+
+    p {
+      font-family: MuseoSansCyrl;
+      margin-top: 32px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    a {
+      margin-bottom: 170px;
+      display: block;
+      margin-top: 45px;
+      width: 269px;
+      height: 38px;
+
+      i {
+        margin-left: 20px;
+        margin-right: -20px;
+        padding-left: 2px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+#info {
+  .info-block {
+    background-color: #fff;
+    padding: 27px 37px 27px 26px;
+    max-width: 350px;
+    height: 132px;
+    margin-top: -35px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.06), 0 10px 10px rgba(0,0,0,0.03);
+    border-radius: 10px;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .info-block:nth-child(2) {
+    margin: -35px 30px;
+  }
+}
+// Медиа-запросы
+@media screen and (max-width: 1472px) {
+  header {
+    background-image: url("../img/bg-header.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar {
+    .navbar-brand {
+      margin-right: 85px;
+    }
+
+    li {
+      font-size: 12px;
+      margin-right: 15px;
+    }
+
+    .dropdown {
+      margin: 0 40px 0 10px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    .navbar-brand {
+      margin-right: 35px;
+    }
+
+    li {
+      font-size: 10px;
+      margin-right: 5px;
+    }
+
+    .dropdown {
+      margin: 0 15px 0 10px;
+    }
+  }
+
+  #info {
+    .info-block {
+      padding: 27px 37px 27px 26px;
+      max-width: 300px;
+      height: 132px;
+      margin-top: -35px;
+
+      h3 {
+        font-size: 13px;
+      }
+
+      p {
+        font-size: 11px;
+      }
+    }
+
+    .info-block:nth-child(2) {
+      margin: -35px 10px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar {
+    .navbar-brand {
+      margin-right: 35px;
+    }
+
+    li {
+      font-size: 10px;
+      margin-right: 5px;
+    }
+
+    .dropdown {
+      margin: 0 15px 0 10px;
+    }
+  }
+
+  #info {
+    .info-block {
+      padding: 20px 13px 20px 19px;
+      max-width: 235px;
+      height: 132px;
+      margin-top: -35px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .info-block:nth-child(2) {
+      margin: -35px 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #info {
+    .info-block {
+      padding: 20px 13px 20px 19px;
+      min-width: 99%;
+      height: 100px;
+      //margin-top: -35px;
+      img {
+        margin-left: 50px;
+        width: 65px;
+        height: 65px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .info-block:nth-child(2) {
+      margin: 10px 10px 10px 0;
+    }
+
+    .info-block:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  #info {
+    .info-block {
+      padding: 20px 13px 20px 19px;
+      min-width: 99%;
+      height: 110px;
+      //margin-top: -35px;
+      img {
+        margin-left: 0;
+        width: 65px;
+        height: 65px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .info-block:nth-child(2) {
+      margin: 10px 10px 10px 0;
+    }
+
+    .info-block:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+#certificate {
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 5px;
+    font-size: 17px;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .pictures {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 300px;
+    margin: auto;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .full {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8%;
+    background: #CCC center no-repeat;
+    background: rgba(0, 0, 0, 0.5) center no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    z-index: 100;
+  }
+
+  a:focus + .full {
+    display: block;
+  }
+}

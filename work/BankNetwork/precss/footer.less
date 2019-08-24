@@ -1,0 +1,153 @@
+.style-footer {
+  margin-top: 50px;
+}
+
+footer {
+  background-color: @attention;
+
+  .logo {
+    width: 137px;
+    height: 40px;
+    margin-right: 149px;
+  }
+
+  .logo-xs {
+    display: none;
+    width: 137px;
+    height: 40px;
+    margin-right: 149px;
+  }
+
+  .navbar {
+    padding-left: 0;
+  }
+
+  ul {
+    li {
+      a {
+        color: #fff;
+        font-size: 13px;
+        z-index: 100001;
+        text-decoration: none;
+        line-height: 30px;
+        margin-right: 15px;
+
+        &:hover {
+          color: #ccc;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .socio-item {
+      margin-left: 36px;
+      margin-right: 0;
+
+      .socio:last-child {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .socio {
+        display: block;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        text-align: center;
+        padding: 3px 0 2px 6.5px;
+        float: left;
+        line-height: 19px;
+
+        &:hover {
+          background-color: #ccc;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}
+
+#copy {
+  background-color: #e6eff8;
+  min-height: 35px;
+
+  h3 {
+    margin-top: 9px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1470px) {
+  .style-footer {
+    img {
+      width: 200px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .style-footer {
+    img {
+      width: 200px;
+    }
+  }
+
+  footer {
+    .logo {
+      margin-right: 50px;
+    }
+  }
+}
+#copy {
+  h3 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .style-footer {
+    margin-top: 100px;
+
+    img {
+      display: none;
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    .logo {
+      display: none;
+    }
+
+    ul {
+      margin: auto;
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+
+      .logo-xs {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .socio-item {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #copy {
+    h3 {
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+}

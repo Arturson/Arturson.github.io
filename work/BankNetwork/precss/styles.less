@@ -1,0 +1,68 @@
+// Файлы less
+@import "header.less";
+@import "adversting.less";
+@import "description.less";
+@import "request.less";
+@import "news.less";
+@import "best.less";
+@import "footer.less";
+
+
+// Цвета
+@attention: #f70027;
+@black: #3d3d3d; // Шрифт
+@font-face {
+  font-family: MuseoSansCyrl;
+  src: url("../fonts/museo_sans_cyrl_500.ttf");
+}
+// Стили заголовков
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  color: #2b2b2b;
+}
+// Стили спанов
+
+.attention {
+  color: @attention;
+}
+// Стили ссылок и иконок
+
+a,
+i {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+// Стили кнопок
+
+.btn {
+  background-color: @attention;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+
+  i {
+    background-color: #fff;
+    color: @attention;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+  }
+
+  &:hover {
+    color: @attention;
+    background-color: #fff;
+  }
+
+  &:hover i {
+    color: #fff;
+    background-color: @attention;
+  }
+}

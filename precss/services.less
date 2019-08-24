@@ -1,0 +1,97 @@
+#services {
+  .row {
+    div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.info {
+  margin-top: -20px;
+  margin-bottom: 200px;
+  border-left: 1px solid @color_10;
+  border-right: 1px solid @color_10;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+
+    li {
+      padding: 15px 0;
+      font-size: 20px;
+      color: #000;
+      border-bottom: 1px solid @color_10;
+
+      span {
+        color: @color_8;
+      }
+    }
+
+    .line-btn {
+      background-image: linear-gradient(20deg, #db5773 20%, #0f218e 130%);
+      border: 0;
+      color: #fff;
+
+      .buy,
+      .detailed {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+
+        &:hover {
+          color: @color_10;
+        }
+      }
+
+      .buy {
+        margin-right: 60px;
+      }
+
+      .detailed {
+        margin-left: 60px;
+      }
+    }
+  }
+}
+
+.info.last {
+  margin-bottom: 70px;
+}
+
+.one {
+  background-image: linear-gradient(20deg, #db5773 10%, #0f218e 140%);
+}
+
+.two {
+  background-image: linear-gradient(-20deg, #db5773 10%, #0f218e 140%);
+}
+
+.three {
+  margin-bottom: -200px;
+
+  .workbox-desc {
+    color: @color_9;
+  }
+}
+
+.workbox {
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0 0 20px;
+  transition: all 0.2s;
+  color: @color_6;
+}
+
+.workbox-title {
+  margin: 0 0 15px;
+  padding: 0;
+  color: @color_6;
+  font-size: 40px;
+}
+
+.workbox-desc {
+  font-family: @font_family_3;
+  font-size: 25px;
+}

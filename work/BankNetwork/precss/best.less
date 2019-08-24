@@ -1,0 +1,139 @@
+#best {
+  margin-top: 90px;
+  height: 466px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 93%;
+
+  h2 {
+    padding-top: 58px;
+    font-size: 24px;
+    color: @attention;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .control {
+    position: absolute;
+    right: 0;
+
+    a {
+      position: relative;
+      float: left;
+      text-align: right;
+      margin-right: 17px;
+      margin-top: 96px;
+      width: 40px;
+      height: 40px;
+      background-color: @attention;
+      border-radius: 20px;
+      color: #fff;
+      line-height: 33px;
+
+      .fa-arrow-left {
+        padding-right: 1px;
+      }
+
+      .fa-arrow-right {
+        padding-left: 2px;
+      }
+
+      i {
+        margin: auto;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .carousel-item {
+    margin: 48px 30px 30px;
+  }
+
+  .block {
+    transition: all 0.4s ease-in-out 0s;
+    box-sizing: content-box;
+
+    .pic-bottom,
+    .pic-top {
+      background-color: #fff;
+      width: 255px;
+      height: 163px;
+
+      img {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        box-shadow: 2.3px 1.9px 21.1px 2.9px rgba(0, 0, 0, 0.1);
+        display: block;
+      }
+    }
+
+    .pic-top {
+      margin-bottom: 32px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  #best {
+    margin-top: 30px;
+
+    .block {
+      .pic-bottom,
+      .pic-top {
+        background-color: #fff;
+        width: 205px;
+        height: 113px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1120px) {
+  #best {
+    background-image: url("../img/bg-best.png");
+  }
+}
+@media screen and (max-width: 991px) {
+  #best {
+    .col-md-4:nth-child(4) {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #best {
+    margin-top: 0;
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    .col-6:nth-child(3) {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  #best {
+    h2 {
+      font-size: 17px;
+    }
+    h3 {
+      font-size: 21px;
+    }
+    .block {
+      .pic-bottom,
+      .pic-top {
+        background-color: #fff;
+        width: 175px;
+        height: 83px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

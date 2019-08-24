@@ -1,0 +1,117 @@
+// Главная страница
+
+#home {
+  background-image: linear-gradient(135deg, #FD6585 10%, #0D25B9 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 0;
+}
+//
+.home-overlay {
+  background-color: @background_color_2;
+  background-repeat: repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.header {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.04), 0 2px 1px -1px rgba(0,0,0,0.01), 0 1px 3px 0 rgba(0,0,0,0.10);
+  position: relative;
+  width: 100%;
+  z-index: 998;
+}
+
+.intro {
+  position: absolute;
+  width: 100%;
+  top: 45.2%;
+  left: 0;
+  text-align: center;
+  transform: translate(0%, -50%);
+  padding: 0 15px;
+
+  h1 {
+    font-weight: 800;
+    font-size: 50px;
+  }
+}
+
+.start {
+  font-family: @font_family_3;
+  font-size: 23px;
+  font-style: normal;
+  text-transform: none;
+  margin: 18px 0;
+}
+// Навбар
+
+.navbar {
+  a {
+    transition: all 0.4s ease-in-out 0s;
+  }
+}
+
+.navbar-custom {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: @font_family_1;
+  background: #fff;
+  padding: 0;
+
+  .navbar-brand {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: @color_4;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: @font_family_5;
+  }
+
+  .navbar-nav {
+    > li {
+      > a {
+        font-size: 15px;
+        letter-spacing: 3px;
+        color: @color_4;
+      }
+    }
+  }
+
+  .nav {
+    li.active {
+      background: none;
+      outline: 0;
+      color: @color_14;
+    }
+
+    li {
+      a {
+        &:hover {
+          background: none;
+          outline: 0;
+          color: @color_14;
+        }
+
+        &:focus {
+          background: none;
+          outline: 0;
+          color: @color_14;
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    .icon-bar {
+      background: #222;
+    }
+  }
+}

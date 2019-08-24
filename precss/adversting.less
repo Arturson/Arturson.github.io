@@ -1,0 +1,52 @@
+#score {
+  margin-top: 110px;
+  img {
+    width: 100%;
+  }
+  h2,
+  h3 {
+    text-transform: uppercase;
+  }
+
+  h2, .zero {
+    font-size: 48px;
+    color: @attention;
+    font-weight: bold;
+  }
+
+  .zero {
+    display: none;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  a {
+    width: 180px;
+    height: 38px;
+
+    i {
+      margin-left: 20px;
+      margin-right: -20px;
+      padding-left: 2px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #score {
+    .zero {
+      display: inline-block;
+    }
+    img {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,439 @@
+#news {
+  position: relative;
+
+  .style {
+    position: absolute;
+    top: 5px;
+    width: 16%;
+  }
+
+  .container {
+    position: relative;
+
+    .headline {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 42px;
+    }
+
+    .card {
+      padding: 0;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 2.3px 1.9px 21.1px 2.9px rgba(0, 0, 0, 0.07);
+
+      .card-img-overlay {
+        padding: 0;
+
+        img {
+          display: block;
+          margin: auto;
+        }
+
+        h5 {
+          text-align: center;
+          text-transform: uppercase;
+          color: #fff;
+        }
+
+        span {
+          display: block;
+          height: 36px;
+          background-color: #020304;
+          color: #fff;
+          font-size: 14px;
+          margin-bottom: 0;
+          padding-left: 0;
+
+          i {
+            margin-left: 26px;
+          }
+        }
+      }
+
+      .card-body {
+        .long,
+        p {
+          line-height: 18px;
+          color: @black;
+        }
+
+        h5 {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .small {
+      i,
+      span {
+        color: @attention;
+      }
+    }
+  }
+
+  .full {
+    background-image: url("../img/news.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #e6eff8;
+
+    h4 {
+      font-weight: bold;
+      text-align: center;
+      color: @black;
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  #news {
+    .card-deck {
+      margin-bottom: 33px;
+    }
+
+    .card {
+      .card-img-overlay {
+        margin-top: 75px;
+
+        img {
+          width: 384px;
+        }
+
+        h5 {
+          font-size: 20px;
+          padding-left: 80px;
+        }
+      }
+
+      span {
+        margin-top: 31px;
+        line-height: 37px;
+      }
+
+      .long,
+      p {
+        font-size: 13px;
+      }
+
+      .card-body {
+        h5 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .small {
+      width: 252px;
+      height: 193px;
+
+      i,
+      span {
+        font-size: 14px;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    .full {
+      h4 {
+        margin-top: 55px;
+        font-size: 16px;
+      }
+    }
+
+    .relevant {
+      .card-body {
+        p {
+          padding-bottom: 7px;
+        }
+
+        h5 {
+          margin-top: 5px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  #news {
+    .card-deck {
+      margin-bottom: 13px;
+    }
+
+    .card {
+      .card-img-overlay {
+        margin-top: 75px;
+
+        img {
+          width: 384px;
+        }
+
+        h5 {
+          font-size: 20px;
+          padding-left: 80px;
+        }
+      }
+
+      span {
+        line-height: 34px;
+      }
+
+      .card-body {
+        h5 {
+          font-size: 12px;
+        }
+
+        .long,
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .small {
+      width: 252px;
+      height: 187px;
+
+      i,
+      span {
+        font-size: 13px;
+      }
+
+      p {
+        margin-bottom: 3px;
+      }
+    }
+
+    .full {
+      h4 {
+        margin-top: 50px;
+        font-size: 16px;
+      }
+    }
+
+    .relevant {
+      .card-body {
+        p {
+          padding-bottom: 5px;
+        }
+
+        h5 {
+          margin-top: 25px;
+          font-size: 13px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #news {
+    margin-top: 50px;
+    .style {
+      display: none;
+    }
+    .card-deck {
+      margin-bottom: 13px;
+    }
+
+    .card {
+      .card-img-overlay {
+        margin-top: 50px;
+
+        img {
+          width: 260px;
+        }
+
+        h5 {
+          font-size: 20px;
+          padding-left: 80px;
+        }
+      }
+
+      span {
+        line-height: 34px;
+      }
+
+      .card-body {
+        h5 {
+          font-size: 10px;
+        }
+
+        p {
+          font-size: 11px;
+        }
+
+        .long {
+          display: none;
+        }
+      }
+    }
+
+    .small {
+      width: 200px;
+
+      i,
+      span {
+        font-size: 13px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .full {
+      h4 {
+        margin-top: 50px;
+        font-size: 16px;
+      }
+    }
+
+    .relevant {
+      .card-body {
+        p {
+          padding-bottom: 20px;
+        }
+
+        h5 {
+          margin-top: 37px;
+          font-size: 13px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #news {
+    .style {
+      display: none;
+    }
+    margin-top: 70px;
+    .card {
+      span {
+        margin-top: 17px;
+        line-height: 37px;
+      }
+    }
+
+    .card-deck {
+      margin-bottom: 13px;
+      margin-top: 13px;
+    }
+
+    .relevant {
+      .card-body {
+        p {
+          padding-bottom: 5px;
+        }
+
+        h5 {
+          margin-top: 5px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .small {
+      p {
+        margin-bottom: 15px;
+      }
+
+      .three {
+        margin-bottom: 33px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #news {
+    .card {
+      span {
+        margin-top: 7%;
+        line-height: 37px;
+      }
+    }
+
+    .relevant {
+      img {
+        display: none;
+      }
+      .card-img-overlay {
+        display: none;
+      }
+    }
+
+    .small {
+      height: 140px;
+      width: 100%;
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      .three {
+        margin-bottom: 15px;
+      }
+    }
+
+    .full {
+      background-size: contain;
+
+      h4 {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #news {
+    .small {
+      height: 140px;
+      width: 100%;
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      .three {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #news {
+    .card {
+      .card-body {
+        h5 {
+          font-size: 11px;
+        }
+        p, .long {
+          font-size: 11px;
+        }
+      }
+    }
+    .small {
+      height: 140px;
+      width: 100%;
+
+      p {
+        margin-bottom: 4px;
+      }
+
+      .three {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
