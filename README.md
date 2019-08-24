@@ -7,6 +7,7 @@
 * Сертификат об обучении
 
  Исходный код моих работ можно посмотреть в папке [work](https://github.com/Arturson/Arturson.github.io/tree/master/work)
+ 
  Посмотреть сами работы можно открыв их в окне на сайте, либо пройдя по ссылкам ниже:
  
  * [Photographer](https://davidaganov.github.io)
